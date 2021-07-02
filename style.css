@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  margin-left: 300px;
+}
+
+header h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.stats {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: thistle;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.library-stats {
+  padding-bottom: 20px;
+}
+
+#container {
+  display: flex;
+  width: auto;
+  height: 100%;
+  justify-content: center;
+}
+
+.cover {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.726);
+  z-index: 3;
+}
+
+.input-section {
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 99999999;
+  background: rgba(175, 123, 223, 0.822);
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  box-shadow: 1px -1px 10px black;
+}
+
+.input-section h2 {
+  margin-bottom: 60px;
+}
+
+#close, .remove-book {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: purple;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.x {
+  margin: auto;
+  display: block;
+  position: relative;
+  background: white;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  width: 20px;
+  height: 2px;
+}
+
+.one {
+  transform: rotate(45deg);
+  top: 7px;
+}
+
+.two {
+  transform: rotate(-45deg);
+  bottom: 7px;
+}
+
+form input{
+  margin-bottom: 20px;
+}
+
+.library {
+  padding-left: 300px;
+  max-width: 1280px;
+  height: auto;
+  margin: auto;
+}
+
+.book-grid {
+  margin: 100px;
+  padding: 60px;
+  background-color: wheat;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-rows: repeat(auto-fill, 350px);
+  gap: 100px;
+}
+
+.book-info {
+  height: 350px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -2px 2px 5px black;
+}
+
+.remove-book {
+  position: relative;
+  left: 70%;
+}
+
+#background {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color:lightblue;
+}
+
+#title-author {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title, .author {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#pages-read {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pages, .read {
+  width: 70px;
+  text-align: center;
+}
+
+.read:hover {
+  box-shadow: -2px 2px 5px black;
+}
+
+#green {
+  position: relative;
+  cursor: pointer;
+  background: lightgreen;
+  padding: 10px;
+  border-radius: 2rem;
+}
+
+#red {
+  cursor: pointer;
+  background: lightcoral;
+  padding: 10px;
+  border-radius: 2rem;
+}

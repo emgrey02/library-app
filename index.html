@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="images/svg+xml" href="images/book-icon.svg">
+  <title>My Library</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="library.js" defer></script>
+</head>
+<body>
+  <main>
+
+    <header>
+      <h1>my library</h1>
+    </header>
+
+    <section title="stats" class="stats">
+      <h2>library details</h2>
+      <div class="library-stats">
+        <span>books in library:</span>
+        <span id="num-books">3</span>
+      </div>
+
+      <div class="library-stats">
+        <span>books finished:</span>
+        <span id="books-finished">2</span>
+      </div>
+
+      <div class="library-stats">
+        <span>total pages read:</span>
+        <span id="total-pages-read">324</span>
+      </div>
+
+      <button id="add-book" type="button">add book</button>
+    </section>
+
+
+    <section title="input" id="container">
+      <div id="cover"></div>
+      <div  class="input-section" style="display: none">
+        <div id="close">
+          <span class="x one"></span>
+          <span class="x two"></span>
+        </div>
+          <h2>add a book</h2>
+        <form>
+          <label for="title">title: </label><br>
+          <input type="text" id="title" name="title"><br>
+  
+          <label for="author">author: </label><br>
+          <input type="text" id="author" name="author"><br>
+  
+          <label for="pages">pages read: </label><br>
+          <input type="text" id="pages" name="pages"><br>
+  
+          <label for="read">finished?</label>
+          <input type="checkbox" id="read" name="read" value="finished?"><br>
+  
+          <input id="submit" type="submit" value="submit">
+        </form>
+      </div>
+    </section>
+
+    <section title="library" class="library">
+      <div class="book-grid">
+
+        <div class="book-info">
+          <div class="remove-book">
+            <span class="x one"></span>
+            <span class="x two"></span>
+          </div>
+          <div id="background">
+            <div id="title-author">
+              <span class="title">Harry Potter and the Sorcerer's Stone</span>
+              <span class="author">by <br><br> J.K. Poopling</span>
+            </div>
+            <div id="pages-read">
+              <span class="pages">234</span>
+              <span class="read" id="green">finished</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
