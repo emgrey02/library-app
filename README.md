@@ -6,6 +6,9 @@ Access to the browser's local storage makes sure the user doesn't lose any libra
 ## Demo
 ![library app](/library-app.gif)
 
+## Live Preview
+[https://emgrey02.github.io/library-app](https://emgrey02.github.io/library-app)
+
 ## Languages Used
 - HTML
 - CSS
